@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test name="Test">
+    <classes>
+      <class name="com.crm.vtiger.script.CreateOrgnizationMem"/>
+      <class name="utils.Create_Org"/>
+      <class name="com.crm.vtiger.test.CreateOrganWitMembersof_6"/>
+      <class name="com.crm.vtiger.test.CreateOrganWithAssignedToMarketingGrp_11"/>
+      <class name="com.crm.vtiger.test.Createorganbyrating_12"/>
+      <class name="utils.Login_Vt"/>
+      <class name="utils.Rapid"/>
+      <class name="utils.Property"/>
+      <class name="utils.Script_Webtable"/>
+      <class name="utils.Tc_2"/>
+      <class name="utils.Debug"/>
+      <class name="com.crm.vtiger.test.Connect"/>
+      <class name="com.crm.vtiger.test.CreateOrganByuserAdmin_10"/>
+      <class name="utils.Base"/>
+      <class name="com.crm.vtiger.test.CreateOrganWithEmailoptOut_8"/>
+      <class name="com.crm.vtiger.test.CreateOrgaNameCheckForEnable_9"/>
+      <class name="com.crm.vtiger.test.CreateOrganWithMemAndClear_7"/>
+      <class name="utils.Drop_down"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

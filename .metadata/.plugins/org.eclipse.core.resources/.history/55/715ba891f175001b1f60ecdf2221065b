@@ -1,0 +1,30 @@
+package utils;
+
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.annotations.Test;
+
+public class Random {
+	@Test
+	public void name(){
+		WebDriver d1=new FirefoxDriver();
+		d1.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
+		d1.get("http://localhost:8888/");
+		d1.findElement(By.name("user_name")).sendKeys("admin");
+		d1.findElement(By.name("user_password")).sendKeys("admin");
+		d1.findElement(By.id("submitButton")).click();
+		d1.findElement(By.xpath("//a[.='Organizations']")).click();
+		d1.findElement(By.xpath("//img[@title='Create Organization...']")).click();
+		Random random=new Random();
+		random.n
+		
+		d1.findElement(By.xpath("//input [@name='accountname']")).sendKeys("abhishek"+);
+	}
+
+	 
+	}
+
+}

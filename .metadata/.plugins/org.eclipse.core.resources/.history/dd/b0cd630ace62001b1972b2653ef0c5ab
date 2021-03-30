@@ -1,0 +1,19 @@
+package pgms;
+
+import java.awt.Robot;
+import java.awt.event.KeyEvent;
+import java.security.Key;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+public class Maxi {
+	public static void main(String[] args) {
+		System.setProperty("webdriver.gecko.driver", "./software/geckodriver.exe");
+		WebDriver d1=new FirefoxDriver();
+		d1.get("https//:www.fb.com");
+		
+		
+	}
+}
+

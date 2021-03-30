@@ -1,0 +1,38 @@
+package organization;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.annotations.Test;
+
+import vitiger_generic.Fileutilities;
+import vitiger_generic.Java_utility;
+import vitiger_generic.Test_excutilits;
+import vitiger_generic.WebdriverUtilities;
+
+public class TC_11 {
+	WebDriver driver=new FirefoxDriver();
+	Test_excutilits excel=new Test_excutilits();
+	Fileutilities file=new Fileutilities();
+	Java_utility java=new Java_utility();
+	WebdriverUtilities util=new WebdriverUtilities();
+	@Test
+	public void cases() throws Throwable
+	{
+		String orgnam1 = excel.getExceldata("Sheet2", 0, 1);
+		util.implicitwait(driver);
+		driver.get(file.readdatafromprofile("URL"));
+		
+		driver.findElement(By.xpath("//input[@type='text']")).sendKeys(file.readdatafromprofile("username"));
+		driver.findElement(By.name("user_password")).sendKeys(file.readdatafromprofile("password"));
+		driver.findElement(By.id("submitButton")).click();
+		driver.findElement(By.xpath("//a[@href='index.php?module=Accounts&action=index']")).click();
+		driver.findElement(By.xpath("//img[@title='Create Organization...']")).click();
+		driver.findElement(By.name("accountname")).sendKeys(orgnam1);
+		driver.findElement(By.xpath("//input[@value='T']")).click();
+	
+	
+
+}
+}
