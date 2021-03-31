@@ -3,11 +3,14 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.crm.vtiger.test.Connect">
+      <class name="com.crm.vtiger.test.CreateOrganWithEmailoptOut_8">
         <methods>
-          <include name="contactcreate"/>
+          <include name="configBeforeSuite"/>
+          <include name="configBeforeMtd"/>
+          <include name="erase"/>
+          <include name="configurBeforeclass"/>
         </methods>
-      </class> <!-- com.crm.vtiger.test.Connect -->
+      </class> <!-- com.crm.vtiger.test.CreateOrganWithEmailoptOut_8 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
